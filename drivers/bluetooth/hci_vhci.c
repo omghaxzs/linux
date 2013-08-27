@@ -152,6 +152,7 @@ static int __vhci_create_device(struct vhci_data *data, __u8 opcode)
 	skb_queue_tail(&data->readq, skb);
 
 	wake_up_interruptible(&data->read_wait);
+
 	return 0;
 }
 
@@ -329,6 +330,12 @@ static int vhci_open(struct inode *inode, struct file *file)
 
 	skb_queue_head_init(&data->readq);
 	init_waitqueue_head(&data->read_wait);
+
+	hdev = hci_alloc_dev();
+	if (!hdev) {
+		kfree(data);
+		return -ENOMEM;
+	}
 
 	mutex_init(&data->open_mutex);
 	INIT_DELAYED_WORK(&data->open_timeout, vhci_open_timeout);
