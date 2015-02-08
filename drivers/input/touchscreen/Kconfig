@@ -1207,3 +1207,15 @@ config TOUCHSCREEN_ROHM_BU21023
 	  module will be called bu21023_ts.
 
 endif
+
+config TOUCHSCREEN_HIMAX
+	tristate "Himax touchscreen support"
+	depends on I2C
+	help
+	  Say Y here if you have a Himax touchscreen and your
+	  board-specific setup code includes that in its table
+	  of I2C devices.
+
+	  If unsure, say N.
+endif
+
