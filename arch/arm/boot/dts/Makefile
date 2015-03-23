@@ -317,6 +317,7 @@ dtb-$(CONFIG_SOC_IMX53) += \
 	imx53-tx53-x13x.dtb \
 	imx53-voipac-bsb.dtb
 dtb-$(CONFIG_SOC_IMX6Q) += \
+	imx6dl-cm-fx6.dtb \
 	imx6dl-apf6dev.dtb \
 	imx6dl-aristainetos_4.dtb \
 	imx6dl-aristainetos_7.dtb \
@@ -339,11 +340,16 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6dl-sabreauto.dtb \
 	imx6dl-sabrelite.dtb \
 	imx6dl-sabresd.dtb \
+	imx6dl-sabresd-hdcp.dtb \
+	imx6dl-sabresd-ldo.dtb \
+	imx6dl-sabresd-pf200.dtb \
+	imx6dl-sbc-fx6.dtb \
 	imx6dl-tx6dl-comtft.dtb \
 	imx6dl-tx6s-8034.dtb \
 	imx6dl-tx6s-8035.dtb \
 	imx6dl-tx6u-801x.dtb \
 	imx6dl-tx6u-8033.dtb \
+	imx6dl-sbc-fx6m.dtb \
 	imx6dl-tx6u-811x.dtb \
 	imx6dl-tx6u-81xx-mb7.dtb \
 	imx6dl-udoo.dtb \
@@ -380,6 +386,10 @@ dtb-$(CONFIG_SOC_IMX6Q) += \
 	imx6q-sabreauto.dtb \
 	imx6q-sabrelite.dtb \
 	imx6q-sabresd.dtb \
+	imx6q-sabresd-hdcp.dtb \
+	imx6q-sabresd-ldo.dtb \
+	imx6q-sbc-fx6.dtb \
+	imx6q-sbc-fx6m.dtb \
 	imx6q-sbc6x.dtb \
 	imx6q-tbs2910.dtb \
 	imx6q-tx6q-1010.dtb \
